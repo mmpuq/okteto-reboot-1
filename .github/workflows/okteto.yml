@@ -25,11 +25,12 @@ jobs:
       run: |
         /home/runner/okteto-Linux-x86_64 login --token ${{ secrets.DAPITOKEN }}
         #okteto的api密钥
-        /home/runner/okteto-Linux-x86_64 namespace byxiaopeng
-        #xx.yml  自己要部署项目
+        /home/runner/okteto-Linux-x86_64 namespace ${{ secrets.namespace }}
+        #Namespace用户名
         wget https://github.com/byxiaopeng/okteto-reboot/raw/master/v2tls.yml
-        #kubectl replace 强制覆盖项目
-        kubectl replace --force -f /home/runner/2tls.yml     
+        #xx.yml  自己要部署项目
+        kubectl replace --force -f /home/runner/2tls.yml    
+        #kubectl replace 强制覆盖项目 
     - uses: actions/upload-artifact@master
       with:
         name: result
