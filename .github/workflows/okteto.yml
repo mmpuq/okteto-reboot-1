@@ -23,7 +23,7 @@ jobs:
         sudo mv ./kubectl /usr/local/bin/kubectl
     - name: go kaishi
       run: |
-        /home/runner/okteto-Linux-x86_64 login --token ${{ secrets.DAPITOKEN }}
+        /home/runner/okteto-Linux-x86_64 login --token ${{ secrets.APITOKEN }}
         #okteto的api密钥
         /home/runner/okteto-Linux-x86_64 namespace ${{ secrets.namespace }}
         #Namespace用户名
