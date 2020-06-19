@@ -7,3 +7,8 @@
 定时强制部署okteto项目
 项目中v2的链接   自行替换成自己的域名
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIm9rdGV0byIsDQogICJhZGQiOiAieHguY2xvdWQub2t0ZXRvLm5ldCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICJhZDgwNjQ4Ny0yZDI2LTQ2MzYtOThiNi1hYjg1Y2M4NTIxZjciLA0KICAiYWlkIjogIjQiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi93cyIsDQogICJ0bHMiOiAidGxzIg0KfQ==
+
+
+UUID/密码：ad806487-2d26-4636-98b6-ab85cc8521f7
+
+WS转发路径（path/obfs-uri）：/ws
