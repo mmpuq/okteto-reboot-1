@@ -1,7 +1,8 @@
 ＃okteto重新启动
 
 
- 6.28 镜像被okteto禁用了
+6.28 镜像被okteto禁用了
+ 
 每天早上6.22自动执行okteto.yml
 
 教程：https://704sjf.coding-pages.com/post/hello-gridea/
