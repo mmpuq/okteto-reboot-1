@@ -1,7 +1,9 @@
 name: okteto
 on:
-  schedule:
-    - cron: 10 22 * * *
+  #schedule:
+    #- cron: 10 22 * * *
+  watch:
+    types: started
 jobs:
   build:
     runs-on: ubuntu-latest  
@@ -15,7 +17,7 @@ jobs:
     - name: Clone source
       run: |
         cd /home/runner
-        wget https://github.com/okteto/okteto/releases/download/1.8.9/okteto-Linux-x86_64
+        wget https://github.com/okteto/okteto/releases/download/1.8.13/okteto-Linux-x86_64
         chmod +x ./okteto-Linux-x86_64
         curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl
         wget https://github.com/byxiaopeng/okteto-reboot/raw/master/v2tls.yml
