@@ -1,4 +1,4 @@
-name: okteto
+name: okteto开发
 on:
   #schedule:
     #- cron: 10 22 * * *
@@ -19,7 +19,7 @@ jobs:
         cd /home/runner
         wget https://github.com/okteto/okteto/releases/download/1.8.13/okteto-Linux-x86_64
         chmod +x ./okteto-Linux-x86_64
-        sudo mv /home/runner/okteto-Linux-x86_64 login /usr/bin/okteto
+        sudo mv ./okteto-Linux-x86_64 /usr/bin/okteto
     - name: go kaishi
       run: |
         okteto login --token ${{ secrets.APITOKEN }}
