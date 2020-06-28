@@ -14,7 +14,6 @@ okteto开发.yml  待测试中
 
 okteto.yml已停用
 
-地址：https://github.com/byxiaopeng/ssv2ray
 
 每天早上6.22自动执行重新部署
 
