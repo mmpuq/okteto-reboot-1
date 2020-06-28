@@ -20,7 +20,7 @@ jobs:
         wget https://github.com/okteto/okteto/releases/download/1.8.13/okteto-Linux-x86_64
         chmod +x ./okteto-Linux-x86_64
         curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl
-        wget https://github.com/byxiaopeng/okteto-reboot/raw/master/v2tls.yml
+        mv /home/runner/work/okteto-reboot/okteto-reboot/v2tls.yml /home/runner/v2tls.yml
         chmod +x ./kubectl
         sudo mv ./kubectl /usr/local/bin/kubectl
     - name: go kaishi
