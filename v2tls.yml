@@ -13,7 +13,7 @@ spec:
         app: v2ws
     spec:
       containers:
-      - image: byxiaopeng/ssv2ray
+      - image: v2tls-docker
         name: v2ws
 
 ---
@@ -28,6 +28,6 @@ spec:
   type: ClusterIP  
   ports:
   - name: "http-port-tcp"
-    port: 8080
+    port: 80
   selector:
     app: v2ws
