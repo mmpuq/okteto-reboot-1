@@ -1,5 +1,8 @@
 ＃okteto重新启动
 
+测试用开发环境部署v2ray
+
+开发文档：https://okteto.com/docs/reference/development-environment
 
 6.28 镜像被okteto禁用了
 
