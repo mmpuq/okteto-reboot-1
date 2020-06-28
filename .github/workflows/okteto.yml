@@ -2,8 +2,6 @@ name: okteto
 on:
   #schedule:
     #- cron: 10 22 * * *
-  watch:
-    types: started
 jobs:
   build:
     runs-on: ubuntu-latest  
