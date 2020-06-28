@@ -32,7 +32,3 @@ jobs:
         #xx.yml  自己要部署项目
         kubectl replace --force -f /home/runner/v2tls.yml    
         #kubectl replace 强制覆盖项目 
-    - uses: actions/upload-artifact@master
-      with:
-        name: result
-        path: /home/runner/2tls.yml
