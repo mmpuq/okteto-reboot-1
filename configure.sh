@@ -32,12 +32,12 @@ cat << EOF > /usr/local/etc/v2ray/config.json
   ]
 }
 EOF
-# start nginx
-nginx
 # Run V2Ray
 VERSION=$(/usr/local/bin/v2ray --version |grep V |awk '{print $2}')
 REBOOTDATE=$(date)
 sed -i "s/VERSION/$VERSION/g" /var/lib/nginx/html/index.html
 sed -i "s/REBOOTDATE/$REBOOTDATE/g" /var/lib/nginx/html/index.html
-/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
-
+nohup /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json >v2.txt 2>&1 &
+# start nginx
+nginx
+tail -f /dev/null
