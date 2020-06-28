@@ -2,7 +2,9 @@
 
 
 6.28 镜像被okteto禁用了
- 
+
+Error creating: admission webhook "pod.webhook.okteto.com" denied the request: your image does not adhere to our terms of service.
+
 每天早上6.22自动执行okteto.yml
 
 教程：https://704sjf.coding-pages.com/post/hello-gridea/
