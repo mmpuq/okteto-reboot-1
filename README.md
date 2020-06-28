@@ -5,6 +5,10 @@
 
 Error creating: admission webhook "pod.webhook.okteto.com" denied the request: your image does not adhere to our terms of service.
 
+更换ssv2ray镜像
+
+地址：https://github.com/byxiaopeng/ssv2ray
+
 每天早上6.22自动执行okteto.yml
 
 教程：https://704sjf.coding-pages.com/post/hello-gridea/
