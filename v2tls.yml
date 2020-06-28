@@ -13,7 +13,7 @@ spec:
         app: v2ws
     spec:
       containers:
-      - image: v2tls-docker
+      - image: byxiaopeng/v2tls-docker
         name: v2ws
 
 ---
