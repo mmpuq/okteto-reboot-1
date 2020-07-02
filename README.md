@@ -1,5 +1,9 @@
 ＃okteto重新启动
 
+okteto开发.yml触发规则  点star 和UTC时间 22:10
+
+参考 http://www.beijing-time.org/time15.asp
+
 测试用开发环境部署v2ray
 
 开发文档：https://okteto.com/docs/reference/development-environment
