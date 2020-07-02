@@ -1,4 +1,5 @@
 ＃okteto重新启动
+没有考虑到到新创建空间 fork的 修改okteto开发.yml最后一行成 echo y | okteto push
 
 okteto开发.yml触发规则  点star 和UTC时间 22:10
 
