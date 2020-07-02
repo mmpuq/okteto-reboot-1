@@ -22,7 +22,6 @@ jobs:
         sudo mv ./okteto-Linux-x86_64 /usr/bin/okteto
     - name: go kaishi
       run: |
-        ls /home/runner/work/oketo-reboot/oketo-reboot/
         okteto login --token ${{ secrets.APITOKEN }}
         #okteto的api密钥
         okteto namespace ${{ secrets.namespace }}
