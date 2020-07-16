@@ -1,0 +1,83 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+name: okteto开发
+
+on:
+
+ # schedule:
+
+  #  - cron: 10 22 * * *
+
+  watch:
+
+    types: started
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest  
+
+    steps:
+
+    - uses: actions/checkout@v1
+
+    - name: Install build dependencies
+
+      run: |
+
+        sudo apt-get -y update
+
+        sudo apt-get -y install wget
+
+        sudo apt-get -y install curl
+
+    - name: Clone source
+
+      run: |
+
+        cd /home/runner
+
+        wget https://github.com/okteto/okteto/releases/download/1.8.13/okteto-Linux-x86_64
+
+        chmod +x ./okteto-Linux-x86_64
+
+        sudo mv ./okteto-Linux-x86_64 /usr/bin/okteto
+
+    - name: go kaishi
+
+      run: |
+
+        okteto login --token ${{ secrets.APITOKEN }}
+
+        #okteto的api密钥
+
+        okteto namespace ${{ secrets.namespace }}
+
+        #Namespace用户名
+
+        cd /home/runner/work/okteto-reboot/okteto-reboot
+
+        ls
+
+        # push y
+
+        echo y | okteto push
+
+        
